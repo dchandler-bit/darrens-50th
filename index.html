@@ -3,45 +3,74 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f4f0e8" />
+  <meta name="theme-color" content="#f3eee6" />
   <title>Evening Celebration — Darren's 50th</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main class="page-shell">
     <section class="hero" aria-labelledby="event-title">
-      <div class="eyebrow">Darren's 50th</div>
-      <h1 id="event-title">Evening Celebration</h1>
-      <div class="rule" aria-hidden="true"></div>
-      <p class="date">Saturday 21 November 2026</p>
-      <p class="time">7.00pm – late</p>
+      <img class="hero-image" src="hero-save-the-date.png" alt="Evening Celebration — Darren's 50th" />
+      <p class="hero-meta">Saturday 21 November 2026 &nbsp;&nbsp;•&nbsp;&nbsp; from 7.00pm</p>
     </section>
 
-    <section class="details card">
-      <p>
-        I'd love you to join me for an evening of good food, conversation and celebration
+    <section class="intro" aria-labelledby="welcome-title">
+      <div class="section-rule" aria-hidden="true"></div>
+      <p class="welcome" id="welcome-title">
+        I’d love you to join me for an evening of good food, conversation and celebration
         as I mark turning 50.
       </p>
-      <p class="venue"><strong>Venue:</strong> <span>[Add venue here]</span></p>
-      <p class="note">Please RSVP below so we know who's able to come.</p>
+      <p class="body-copy">
+        It would be a pleasure to have you there.
+      </p>
     </section>
 
-    <section class="rsvp card" aria-labelledby="rsvp-title">
-      <h2 id="rsvp-title">RSVP</h2>
-      <p class="rsvp-intro">A couple of quick details and you're done.</p>
+    <section class="details-rsvp">
+      <div class="details-block">
+        <p class="section-label">When &amp; where</p>
+        <h2>The details</h2>
 
-      <a class="button" href="YOUR_GOOGLE_FORM_LINK" target="_blank" rel="noopener noreferrer">
-        RSVP now
-      </a>
+        <dl class="details-list">
+          <div>
+            <dt>Date</dt>
+            <dd>Saturday 21 November 2026</dd>
+          </div>
+          <div>
+            <dt>Time</dt>
+            <dd>From 7.00pm</dd>
+          </div>
+          <div>
+            <dt>Venue</dt>
+            <dd>Agriculture House<br>Greville Cl, Sandhurst Rd<br>Gloucester GL2 9RG<br><a class="w3w" href="https://what3words.com/insulated.nurse.breed" target="_blank" rel="noopener noreferrer">what3words: ///insulated.nurse.breed</a></dd>
+          </div>
+        </dl>
+        <div class="food-note">
+          <p class="section-label">Food</p>
+          <p>Wood-fired pizza supplied by <strong>The Cotswold Pizza Co.</strong></p>
+        </div>
+      </div>
 
-      <p class="small">The RSVP opens in a simple Google form and takes less than a minute.</p>
+      <div class="rsvp-block" aria-labelledby="rsvp-title">
+        <p class="section-label">Reply</p>
+        <h2 id="rsvp-title">RSVP</h2>
+        <p class="body-copy compact">
+          Please let me know whether you can come.
+        </p>
+
+        <a class="button" href="YOUR_GOOGLE_FORM_LINK" target="_blank" rel="noopener noreferrer">
+          Respond here
+        </a>
+
+        <p class="small">A short reply form will open in a new tab.</p>
+      </div>
     </section>
 
     <footer>
-      <p>Looking forward to celebrating with you.</p>
+      <div class="section-rule" aria-hidden="true"></div>
+      <p class="footer-copy">Looking forward to celebrating with you.</p>
       <p class="signature">Darren</p>
     </footer>
   </main>
