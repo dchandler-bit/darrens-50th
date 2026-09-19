@@ -1,0 +1,128 @@
+:root {
+  --paper: #f4f0e8;
+  --ink: #242321;
+  --muted: #726d63;
+  --line: #b9935a;
+  --card: rgba(255,255,255,0.48);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 15%, rgba(112,120,96,0.09), transparent 28%),
+    radial-gradient(circle at 90% 10%, rgba(185,147,90,0.08), transparent 24%),
+    var(--paper);
+  color: var(--ink);
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.page-shell {
+  width: min(760px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 72px 0 56px;
+}
+
+.hero {
+  text-align: center;
+  padding: 24px 12px 48px;
+}
+
+.eyebrow {
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: .78rem;
+  color: var(--muted);
+}
+
+h1, h2, .signature {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: .95;
+  letter-spacing: -0.02em;
+}
+
+.rule {
+  width: 52px;
+  height: 1px;
+  background: var(--line);
+  margin: 28px auto 22px;
+}
+
+.date, .time {
+  margin: 4px 0;
+  font-size: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid rgba(36,35,33,.12);
+  border-radius: 18px;
+  padding: 32px;
+  margin: 20px 0;
+  backdrop-filter: blur(4px);
+}
+
+.details p:first-child {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.45rem;
+  line-height: 1.45;
+  margin-top: 0;
+}
+
+.venue { margin-top: 28px; }
+.note { color: var(--muted); }
+
+.rsvp { text-align: center; }
+.rsvp h2 { font-size: 2.2rem; margin: 0 0 6px; }
+.rsvp-intro { color: var(--muted); margin-top: 0; }
+
+.button {
+  display: inline-block;
+  margin: 14px 0 10px;
+  padding: 13px 26px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 500;
+  transition: .2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: var(--ink);
+  color: var(--paper);
+  transform: translateY(-1px);
+}
+
+.small { font-size: .86rem; color: var(--muted); }
+
+footer {
+  text-align: center;
+  padding: 28px 12px 0;
+  color: var(--muted);
+}
+
+.signature {
+  color: var(--ink);
+  font-size: 1.9rem;
+  margin-top: 6px;
+}
+
+@media (max-width: 560px) {
+  .page-shell { padding-top: 42px; }
+  .hero { padding-bottom: 32px; }
+  .card { padding: 24px 20px; border-radius: 14px; }
+}
